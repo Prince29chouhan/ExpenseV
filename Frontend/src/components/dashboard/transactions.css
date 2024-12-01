@@ -1,0 +1,146 @@
+/* Background for the entire page */
+body {
+  background-color: #1e2a47; /* Navy blue background */
+  font-family: 'Arial', sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container for transactions */
+.transactions-container {
+  background: linear-gradient(145deg, #1e2a47, #2c3e6b); /* Gradient blue background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+/* Header section */
+.transactions-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.transactions-header h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.view-all {
+  color: #a0aec0;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.view-all:hover {
+  color: #ffffff;
+}
+
+/* List of transactions */
+.transactions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.transaction-item {
+  background-color: #2a3a64; /* Slightly lighter blue */
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+.transaction-item:hover {
+  background-color: #344a6d; /* Darker blue on hover */
+}
+
+.transaction-details {
+  display: flex;
+  align-items: center;
+}
+
+.transaction-avatar {
+  width: 35px;
+  height: 35px;
+  background-color: #4A5568;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.transaction-name {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.transaction-date {
+  color: #e2e8f0;
+  font-size: 14px;
+}
+
+.transaction-amount {
+  font-size: 16px;
+  font-weight: bold;
+  color: #f8b400;
+}
+
+.transaction-status {
+  padding: 6px 15px;
+  border-radius: 25px;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Category-specific colors */
+.bg-green-400 {
+  background-color: #48bb78; /* Green for food */
+}
+
+.bg-blue-400 {
+  background-color: #4299e1; /* Blue for travel */
+}
+
+.bg-red-400 {
+  background-color: #f56565; /* Red for bills */
+}
+
+.bg-purple-400 {
+  background-color: #9f7aea; /* Purple for movie */
+}
+
+.bg-gray-400 {
+  background-color: #cbd5e0; /* Default color */
+}
+
+/* Buttons */
+.add-expense-button {
+  padding: 12px 30px;
+  background-color: #38b2ac;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.add-expense-button:hover {
+  background-color: #319795;
+}
+
+.row-transaction {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 20px;
+}

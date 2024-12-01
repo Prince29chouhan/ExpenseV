@@ -1,0 +1,186 @@
+/* Sidebar Styles */
+.sidebar {
+  background-color: #1a2c59;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 220px;
+  height: 100vh;
+  padding: 20px;
+  position: fixed;  /* Make sidebar fixed */
+  top: 0;  /* Align it to the top of the screen */
+  left: 0;  /* Align it to the left of the screen */
+  z-index: 1000;  /* Ensure it appears on top of other components */
+  transition: width 0.3s ease;  /* Smooth transition for width change on mobile */
+}
+
+.sidebar-logo {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between; /* Space out the logo and hamburger */
+}
+
+.sidebar-logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.sidebar-logo h2 {
+  font-size: 1.25rem;
+  color: #FFE344;
+}
+
+.sidebar nav {
+  flex: 1;
+  width: 100%;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.sidebar nav ul li {
+  margin: 10px 0;
+}
+
+.sidebar nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.sidebar nav ul li a:hover {
+  color: #7e57c2;
+  background: rgba(126, 87, 194, 0.1);
+  border-radius: 5px;
+}
+
+.sidebar nav ul li a svg {
+  margin-right: 10px;
+}
+
+/* Add Expense Button */
+.add-expense-button {
+  background-color: #7e57c2;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5%;
+  cursor: pointer;
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.add-expense-button:hover {
+  background-color: #6b47b7;
+}
+
+/* Add Budget Button */
+.add-budget-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  margin: 10px 0;
+  background-color: #FFE344;
+  color: #333;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.add-budget-button:hover {
+  background-color: #ffd100;
+  transform: scale(1.05);
+}
+
+.add-budget-button:active {
+  transform: scale(1);
+}
+
+.add-budget-icon {
+  margin-right: 10px;
+  font-size: 18px;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.add-budget-button:hover .add-budget-icon {
+  color: #fff;
+}
+
+/* Hamburger Menu for Mobile */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  background-color: #333;
+  border: none;
+  padding: 10px;
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.hamburger.open {
+  background-color: #7e57c2;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure sidebar is always on top */
+  }
+
+  .sidebar nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    display: none; /* Hide links by default */
+  }
+
+  .sidebar nav ul.open {
+    display: flex; /* Show links when menu is open */
+    flex-direction: column;
+  }
+
+  .sidebar nav ul li {
+    margin: 5px 0;
+  }
+
+  .sidebar-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  /* Adjust the Hamburger menu to show on small screens */
+  .hamburger {
+    display: block;
+  }
+}

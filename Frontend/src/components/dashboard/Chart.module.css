@@ -1,0 +1,50 @@
+.chartContainer {
+  background: linear-gradient(135deg, #001f3f, #003d7d); /* Navy blue gradient */
+  padding: 20px;
+  border-radius: 12px;
+  color: white; /* Adjust text color for contrast */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 5%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.chartTitle {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  color: #f0f8ff; /* Light color for better readability */
+}
+
+.monthlyTotal {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #f8f9fa; /* Light text shade */
+}
+
+.navButton {
+  background: #00509e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.navButton:hover {
+  background: #0077c8;
+  transform: scale(1.1);
+}
+
+.navButton:focus {
+  outline: none;
+}
+

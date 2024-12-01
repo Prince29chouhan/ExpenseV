@@ -1,0 +1,97 @@
+/* BudgetModal.module.css */
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3); /* Slightly transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .modalContainer {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    width: 350px; /* Slightly wider */
+    max-width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  }
+  
+  .modalHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 15px;
+  }
+  
+  .modalHeader h3 {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .closeButton {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #999;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .closeButton:hover {
+    color: #f44336; /* Red on hover */
+  }
+  
+  .modalBody {
+    margin-top: 20px;
+  }
+  
+  .budgetInput {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s;
+    color: black;
+  }
+  
+  .budgetInput:focus {
+    border-color: #4CAF50; /* Highlight the border on focus */
+  }
+  
+  .modalFooter {
+    margin-top: 25px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .saveButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .saveButton:hover {
+    background-color: #45a049; /* Slightly darker green */
+  }
+  
+  .saveButton:active {
+    background-color: #388e3c; /* Darker green when clicked */
+  }
+  
